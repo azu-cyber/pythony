@@ -9,3 +9,13 @@ def romanToInt(romanInput):
     return resultInteger + roman[romanInput[-1]]
 roman = input("Input roman numeral : ")
 print ("Integer equivalent : ",romanToInt(roman))
+#binary to decimal
+n=10
+bin=n
+dec=0
+base=1
+while n>0:
+    rem=n%10
+    dec=dec+rem*base
+    base=base*2
+print("The decimal value is ",dec)
